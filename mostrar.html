@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Gerenciador de Mercadorias</title>
+    <link rel="stylesheet" type="text/css" href="lib/_bootstrap/css/bootstrap.css" />
+    <style>
+        .jumbotron {
+            width: 600px;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .form-control {
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            margin-top: 30px;
+            width: 300px;
+        }
+        
+        .table {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 575px;
+        }
+    </style>
+    <script src="lib/_angular/angular.js"></script>
+    <script>
+        angular.module("Mercadorias", []);
+        angular.module("Mercadorias").controller("MercadoriasCtrl", function ($scope, $http) {
+
+        });
+    </script>
+</head>
+
+<body ng-controller="mercadoriasCtrl">
+    <div class="jumbotron">
+        <h3>Mercadorias</h3>
+        <table class="table table-striped">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Tipo Mercadoria</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Tipo Negócio</th>
+            </tr>
+            <tr ng-repeat="mercadoria in lista">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <button class="btn btn-primary" onclick="window.location.href='index.html';">Menu Inicial</button>
+    </div>
+</body>
+
+</html>
